@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .welcome-message {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 30px;
+        }
+        .user-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .logout-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Dashboard!</h1>
+        <div class="welcome-message">
+            Your email has been successfully verified.
+        </div>
+        <div class="user-info">
+            <p>You are now logged in and can access your account.</p>
+            <p>Your email: <span id="userEmail"></span></p>
+        </div>
+        <a href="/" class="logout-btn" onclick="logout()">Logout</a>
+    </div>
+
+    <script>
+        // Get user email from localStorage
+        document.getElementById('userEmail').textContent = localStorage.getItem('userEmail') || 'Not available';
+        
+        function logout() {
+            // Clear user data from localStorage
+            localStorage.removeItem('userEmail');
+            // Redirect to home page
+            window.location.href = '/';
+        }
+    </script>
+</body>
+</html> 
