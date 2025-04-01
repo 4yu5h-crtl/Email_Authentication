@@ -54,8 +54,8 @@ Before running this project, make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/email-auth.git
-   cd email-auth
+   https://github.com/4yu5h-crtl/Email_Authentication.git
+   cd Email_Authentication
    ```
 
 2. **Configure Database**
