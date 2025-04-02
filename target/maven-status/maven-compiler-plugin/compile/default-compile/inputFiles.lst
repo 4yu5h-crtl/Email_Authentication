@@ -1,0 +1,9 @@
+D:\email_auth\src\main\java\com\example\emailauth\config\SecurityConfig.java
+D:\email_auth\src\main\java\com\example\emailauth\EmailAuthApplication.java
+D:\email_auth\src\main\java\com\example\emailauth\service\EmailService.java
+D:\email_auth\src\main\java\com\example\emailauth\controller\AuthController.java
+D:\email_auth\src\main\java\com\example\emailauth\service\QRCodeService.java
+D:\email_auth\src\main\java\com\example\emailauth\service\UserService.java
+D:\email_auth\src\main\java\com\example\emailauth\model\User.java
+D:\email_auth\src\main\java\com\example\emailauth\controller\HomeController.java
+D:\email_auth\src\main\java\com\example\emailauth\repository\UserRepository.java
